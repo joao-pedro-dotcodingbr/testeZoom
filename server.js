@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 
-app.get("/get-code/:code", (req, res, next) => {
+app.get("/get-code", (req, res, next) => {
   try {
 
      const code = req.params?.code;
