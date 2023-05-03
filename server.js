@@ -8,8 +8,8 @@ app.use(express.json());
 app.get("/redirect", (req, res) => {
   const { code } = req.query;
   console.log({ query: { code } });
-  res.writeHead(301, { Location: `ifb://MainTab/Schedule/${code}` });
-  console.log({ url: { Location: `ifb://MainTab/Schedule/${code}` } });
+  res.writeHead(301, { Location: `ifb://MainTab/${code}` });
+  console.log({ Location: `ifb://MainTab/${code}` });
   return res.end();
 });;
 
