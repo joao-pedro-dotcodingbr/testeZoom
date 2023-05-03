@@ -6,8 +6,11 @@ app.use(express.json());
 
 
 app.get("/redirect", (req, res) => {
+
+  console.log('entrou')
   const { code } = req.query;
-  res.writeHead(301, { Location: `ifb://MainTab/Schedule/${code}` });
+  console.log({ code });
+  res.writeHead(301, { Location: `ifb://UpdateSchedule/${code}` });
   return res.end();
 });;
 
