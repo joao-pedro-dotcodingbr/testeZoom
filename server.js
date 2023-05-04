@@ -15,9 +15,8 @@ app.get("/redirect", async (req, res) => {
        Location: `institutofb://MainTab/Documents/${code}`,
      });
      console.log({ Location: `institutofb://MainTab/Documents/${code}` });
-     await new Promise((resolve) => setTimeout(resolve, 2000));
 
-     console.log({ip : req.ip});
+     console.log({ ip: req.ip });
      return res.end();
   } catch (error) {
     console.log(error)
