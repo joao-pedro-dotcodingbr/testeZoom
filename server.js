@@ -6,20 +6,10 @@ app.use(express.json());
 
 
 app.get("/redirect", async (req, res) => {
-
-  try {
-     const { code } = req.query;
-     console.log({ query: { code } });
-
-     res.writeHead(301, {
-       Location: `institutofb://MainTab/Documents/${code}`,
-     });
-     console.log({ Location: `institutofb://MainTab/Documents/${code}` });
-     return res.end();
-  } catch (error) {
-    console.log(error)
-  }
-
+  const { code } = req.query;
+  console.log({ query: { code } });
+  res.writeHead(301, { Location: `institutofb://UpdateSchedule/${code}` });
+  return res.end();
 });;
 
 app.listen(process.env.PORT || 3535, () => {
