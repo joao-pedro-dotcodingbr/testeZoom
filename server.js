@@ -15,8 +15,6 @@ app.get("/redirect", async (req, res) => {
        Location: `institutofb://MainTab/Documents/${code}`,
      });
      console.log({ Location: `institutofb://MainTab/Documents/${code}` });
-
-     console.log({ ip: req.ip });
      return res.end();
   } catch (error) {
     console.log(error)
