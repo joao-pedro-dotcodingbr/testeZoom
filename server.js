@@ -8,8 +8,8 @@ app.use(express.json());
 app.get("/redirect", (req, res) => {
   const { code } = req.query;
   console.log({ query: { code } });
-  res.writeHead(301, { Location: `easyliving://recoveryScreen/${code}` });
-   console.log({ Location: `easyliving://recoveryScreen/${code}` });
+  res.writeHead(301, { Location: `institutofb://UpdateSchedule/${code}` });
+   console.log({ Location: `institutofb://UpdateSchedule/${code}` });
   return res.end();
 });;
 
