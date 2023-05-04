@@ -10,6 +10,7 @@ app.get("/redirect", async (req, res) => {
   console.log({ query: { code } });
 
   res.writeHead(301, { Location: `institutofb://MainTab/Documents/${code}` });
+     console.log({ Location: `institutofb://MainTab/Documents/${code}` });
   await new Promise((resolve) => setTimeout(resolve, 2000));
   res.writeHead(301, { Location: `institutofb://MainTab/Documents/${code}` });
 
