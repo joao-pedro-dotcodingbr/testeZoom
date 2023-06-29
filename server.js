@@ -12,6 +12,19 @@ app.get("/redirect", async (req, res) => {
   return res.end();
 });;
 
+
+app.get("/iugu", async (req, res) => {
+  console.log({ body: req.body, query: req.query, headers: req.headers });
+  return res.end();
+});;
+
+app.get("/iugu/credit", async (req, res) => {
+  console.log({ body: req.body, query: req.query, headers: req.headers });
+  return res.end();
+});;
+
+
+
 app.listen(process.env.PORT || 3535, () => {
   console.log('listening on port')
 });
