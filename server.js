@@ -13,13 +13,13 @@ app.get("/redirect", async (req, res) => {
 });;
 
 
-app.get("/iugu", async (req, res) => {
+app.post("/iugu", async (req, res) => {
   console.log({ body: req.body, query: req.query, headers: req.headers });
   return res.end();
 });;
 
 app.post("/iugu/credit", async (req, res) => {
-  console.log({ body: req.body, query: req.query});
+  console.log({ body: req.body, query: req.query });
   return res.end();
 });;
 
