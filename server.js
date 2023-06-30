@@ -18,7 +18,7 @@ app.post("/iugu", async (req, res) => {
   console.log(
     "============================== teste ========================================"
   );
-  console.log({req});
+  console.log({ body: req.body });
   console.log(
     "============================== end teste ========================================"
   );
@@ -28,7 +28,7 @@ app.post("/iugu", async (req, res) => {
 
 app.post("/iugu/credit", async (req, res) => {
   console.log('============================== teste ========================================')
-  console.log({ req });
+  console.log({ body: req.body });
   console.log(
     "============================== end teste ========================================"
   );
