@@ -17,7 +17,7 @@ app.post("/iugu", async (req, res) => {
   console.log(
     "============================== teste ========================================"
   );
-  console.log({req: JSON.stringify(req)});
+  console.log({req});
   console.log(
     "============================== end teste ========================================"
   );
@@ -27,7 +27,7 @@ app.post("/iugu", async (req, res) => {
 
 app.post("/iugu/credit", async (req, res) => {
   console.log('============================== teste ========================================')
-  console.log({ req: JSON.stringify(req) });
+  console.log({ req });
   console.log(
     "============================== end teste ========================================"
   );
