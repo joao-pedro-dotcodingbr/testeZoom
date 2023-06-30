@@ -18,7 +18,9 @@ app.post("/iugu", async (req, res) => {
   console.log(
     "============================== teste ========================================"
   );
-  console.log({ body: req.body });
+
+    const idInvoice = req.body["data[id]"];
+  console.log({ body: req.body, idInvoice });
   console.log(
     "============================== end teste ========================================"
   );
