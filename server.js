@@ -14,12 +14,24 @@ app.get("/redirect", async (req, res) => {
 
 
 app.post("/iugu", async (req, res) => {
+  console.log(
+    "============================== teste ========================================"
+  );
   console.log({ body: req.body, query: req.query, headers: req.headers });
+  console.log(
+    "============================== end teste ========================================"
+  );
+
   return res.end();
 });;
 
 app.post("/iugu/credit", async (req, res) => {
+  console.log('============================== teste ========================================')
   console.log({ body: req.body, query: req.query });
+  console.log(
+    "============================== end teste ========================================"
+  );
+
   return res.end();
 });;
 
